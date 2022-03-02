@@ -29,4 +29,7 @@ class CarManager(Turtle):
         for car in self.all_cars:
             car.backward(STARTING_MOVE_DISTANCE)
 
+    def level_up(self):
+        self.car_speed += MOVE_INCREMENT
+
 

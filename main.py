@@ -28,4 +28,9 @@ while game_is_on:
             game_is_on = False
             scoreboard.game_over()
 
+    if player.is_at_finish():
+        player.go_to_start()
+        car_manager.level_up()
+        scoreboard.increase_level()
+
 screen.exitonclick()
